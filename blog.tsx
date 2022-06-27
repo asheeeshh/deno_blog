@@ -324,7 +324,7 @@ export async function handler(
       },
       styles: [
         gfm.CSS,
-        `.markdown-body { --color-canvas-default: transparent; --color-canvas-subtle: #cbd5db; --color-border-muted: rgba(203, 213, 219,0.2); } .markdown-body img + p { margin-top: 16px; color: #cbd5db; }`,
+        `.markdown-body { --color-canvas-default: transparent; --color-canvas-subtle: #cbd5db; --color-border-muted: rgba(203, 213, 219,0.2); color: #cbd5db; --color-fg-default: #cbd5db; } .markdown-body img + p { margin-top: 16px; }`,
         ...(blogState.style ? [blogState.style] : []),
         ...(post.background ? [`body{background:${post.background};}`] : (
           blogState.background
