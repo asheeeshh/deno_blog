@@ -165,7 +165,7 @@ export function PostPage({ post, state }: PostPageProps) {
         />
       )}
       <article>
-        <h1 class="text-4xl text-gray-300 font-medium">
+        <h1 class="text-4xl text-gray-200 font-medium">
           {post.title}
         </h1>
         <p class="mt-1 text-gray-300">
