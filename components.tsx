@@ -51,14 +51,14 @@ export function Index({ state, posts }: IndexProps) {
               />
             )}
             <h1
-              class="mt-3 text-3xl text-gray-200"
+              class="mt-3 mb-2 text-2xl text-gray-200"
               style={{ color: state.coverTextColor }}
             >
               {state.title ?? "My Blog"}
             </h1>
             {state.description && (
               <p
-                class="text-lg text-gray-300"
+                class="text-md text-gray-300"
                 style={{ color: state.coverTextColor }}
               >
                 {state.description}
@@ -82,7 +82,7 @@ export function Index({ state, posts }: IndexProps) {
 
                   return (
                     <a
-                      class="relative flex items-center justify-center w-8 h-8 rounded-full bg-gray-200/10 text-gray-500 hover:bg-gray-200/15 hover:text-black transition-colors group"
+                      class="relative flex items-center justify-center w-8 h-8 rounded-full bg-gray-400/10 text-gray-200 hover:bg-gray-400/15 hover:text-black transition-colors group"
                       href={link.url}
                     >
                       {link.icon ? link.icon : <Icon />}
@@ -152,10 +152,10 @@ export function PostPage({ post, state }: PostPageProps) {
       <div class="pb-16">
         <a
           href="/"
-          class="inline-flex items-center gap-1 text-sm text-gray-200/80 hover:text-gray-300 transition-colors"
+          class="inline-flex items-center gap-1 text-md text-gray-200/80 hover:text-gray-300 transition-colors"
           title="Back to Index Page"
         >
-          ../index
+          . . /
         </a>
       </div>
       {post.coverHtml && (
@@ -196,7 +196,7 @@ function Footer(props: { author?: string }) {
         <span>
           &copy; {new Date().getFullYear()} {props.author}, powered by{" "}
           <a
-            class="inline-flex items-center gap-1 underline hover:text-gray-800 transition-colors"
+            class="inline-flex items-center gap-1 underline hover:text-gray-200 transition-colors"
             href="https://deno.land/x/blog"
           >
             deno blog
