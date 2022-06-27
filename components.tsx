@@ -51,7 +51,7 @@ export function Index({ state, posts }: IndexProps) {
               />
             )}
             <h1
-              class="mt-3 mb-2 text-2xl text-gray-200"
+              class="mt-3 mb-2 text-2xl text-gray-200 font-medium"
               style={{ color: state.coverTextColor }}
             >
               {state.title ?? "My Blog"}
@@ -116,7 +116,7 @@ export function Index({ state, posts }: IndexProps) {
 function PostCard({ post, timezone }: { post: Post; timezone: string }) {
   return (
     <div class="pt-12 first:pt-0">
-      <h3 class="text-2xl font-bold">
+      <h3 class="text-2xl font-medium">
         <a class="" href={post.pathname}>
           {post.title}
         </a>
@@ -165,7 +165,7 @@ export function PostPage({ post, state }: PostPageProps) {
         />
       )}
       <article>
-        <h1 class="text-4xl text-gray-300 font-bold">
+        <h1 class="text-4xl text-gray-300 font-medium">
           {post.title}
         </h1>
         <p class="mt-1 text-gray-300">
