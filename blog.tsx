@@ -283,6 +283,7 @@ export async function handler(
       title: blogState.title ?? "My Blog",
       meta: {
         "description": blogState.description,
+        "icon": blogState.avatar,
         "og:title": blogState.title,
         "og:description": blogState.description,
         "og:image": blogState.ogImage ?? blogState.cover,
