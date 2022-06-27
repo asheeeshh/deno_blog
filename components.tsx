@@ -82,7 +82,7 @@ export function Index({ state, posts }: IndexProps) {
 
                   return (
                     <a
-                      class="relative flex items-center justify-center w-8 h-8 rounded-full bg-gray-400/10 text-gray-200 hover:bg-gray-400/15 hover:text-black transition-colors group"
+                      class="relative flex items-center justify-center w-8 h-8 rounded-full bg-gray-400/10 text-gray-200 hover:bg-gray-400/15 hover:text-gray-100 transition-colors group"
                       href={link.url}
                     >
                       {link.icon ? link.icon : <Icon />}
